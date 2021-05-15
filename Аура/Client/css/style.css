@@ -61,6 +61,7 @@ header a:hover{
 /*main*/
 main h1{
     text-align: center;
+    margin-top: 2rem;
 }
 main p{
     font-size: 16pt;
@@ -72,6 +73,23 @@ main p{
 main .button{
     font-size: 16pt;
 }
+main .button label{
+    max-height: 50px;
+}
+main .button label img{
+    cursor: pointer;
+    height: 40px;
+    margin: 1rem 0.3rem;
+/*    background-color: #f2fafbe8;*/
+    border: 0;
+    font: 400 20pt Arial;
+    padding: 0.3rem;
+    margin: 1rem 0.3rem;
+}
+main .button label img:hover{
+    height: 45px;
+    margin: 0.7rem 0.12rem;
+}
 main .button input{
     background-color: #f2fafbe8;
     border: 0;
@@ -79,6 +97,7 @@ main .button input{
     padding: 0.3rem;
     margin: 1rem 0.3rem;
     width: 2rem;
+    display: none;
 }
 main .button input:hover{
     color: red;
