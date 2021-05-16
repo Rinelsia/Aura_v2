@@ -1,3 +1,21 @@
+/*общие*/
+.container{
+    min-width: 1024px;
+}
+.ava img{
+    height: inherit;
+    width: inherit;
+    border-radius: inherit;
+}
+.ava{
+    height: 50px;
+    width: 50px;
+    padding: 0px;
+    border-radius: 30px;
+    background: #999;
+    margin: 4pt;
+}
+/* ======================================================== */
 /*Описание стиля шапки сайта*/
 header{
     box-shadow: 0px 10px 7px -14px rgb(175 165 165 / 42%);
@@ -8,20 +26,6 @@ header .back a{
     padding-left: 10pt;
 }
 /**/
-header .ava img{
-    height: inherit;
-    width: inherit;
-    border-radius: inherit;
-}
-header .ava{
-    height: 50px;
-    width: 50px;
-    padding: 0px;
-    border-radius: 30px;
-    background: #999;
-    margin: 4pt;
-}
-
 header .user{
     font-size: 16pt;
     letter-spacing: 3px;
@@ -75,6 +79,8 @@ main .button{
 }
 main .button label{
     max-height: 50px;
+    float: left;
+    margin-bottom: 2rem;
 }
 main .button label img{
     cursor: pointer;
@@ -119,3 +125,44 @@ main .button button:hover{
 main .button button span{
     padding: 0.3rem;
 }
+/*Комментарии*/
+main .comment .ava{
+    float: left;
+}
+main .comment form input, main .comment form button{
+    height: 32pt;
+    margin: 0.5rem 0rem;
+    border: 0;
+    background-color: #eeefee;;
+}
+main .comment form input[type="text"]{
+    width: 70%;
+    margin-left: 2rem;
+    border-radius: 16pt 0 0 16pt;
+    float: left;
+    padding: 1.5pt 11pt;
+    font-size: 16pt;
+}
+main .comment form button{
+    border-radius: 0 16pt 16pt 0;
+    cursor: pointer;
+}
+/*убираем фокус с формы*/
+main .comment form:focus, main .comment input:focus, main .comment button:focus{
+    outline: none;
+}
+/*
+nav input {
+    width: 80%;
+    height: 20pt;
+    border: 0;
+    border-radius: 10pt 0 0 10pt;
+    padding: 0pt 5pt 0pt 6pt;
+}
+nav button {
+    height: 20pt;
+    background: rgb(255, 255, 255);
+    border: 0;
+    cursor: pointer;
+    border-radius: 0 10pt 10pt 0;
+}*/
