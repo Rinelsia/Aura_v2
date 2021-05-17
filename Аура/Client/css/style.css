@@ -126,6 +126,9 @@ main .button button span{
     padding: 0.3rem;
 }
 /*Комментарии*/
+main .comment>.row{
+    margin: 3rem -1rem 2rem;
+}
 main .comment .ava{
     float: left;
 }
@@ -150,6 +153,28 @@ main .comment form button{
 /*убираем фокус с формы*/
 main .comment form:focus, main .comment input:focus, main .comment button:focus{
     outline: none;
+}
+main .comment .ava+p{
+    margin-left: 2rem;
+}
+main .comment p span{
+    padding: 1rem 1rem;
+    font-size: 10pt;
+}
+main .comment .button button{
+    background-color: #ffffff00;
+    color: #928d8d;
+    margin: 0;
+    float: left;
+    padding: 1rem 2rem;
+    margin-right: 16%;
+}
+main .comment .button button:hover{
+    background-color: #cdf0f72b;
+    color: #333;
+}
+main .comment div[id]{
+    padding: 1rem;
 }
 /*
 nav input {
