@@ -36,3 +36,9 @@ ajax.onload = function(){
 //  let responseObj = xhr.response;
 //  alert(responseObj.message); // Привет, мир!
 //};
+//Обработка кнопок
+document.addEventListener("DOMContentLoaded",VisibleComment(Event));
+function VisibleComment(){
+    let id_comment = document.getElementById(comment);
+    id_comment.setAttribute('style', 'display: flex');
+}
