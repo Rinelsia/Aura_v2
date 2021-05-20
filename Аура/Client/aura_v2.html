@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Document</title>
     <script src="js/jQuery.js"></script>
-<!--    <script src="js/script.js"></script>-->
+    <script src="js/script.js"></script>
     <link rel="stylesheet" href="css/bootstrap-grid.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -14,7 +14,7 @@
             <div class="row">
                 <div class="col-xl-2">
                     <div class="back">
-                        <a href="">&lt;-</a>
+                        <a href="">&#8617;</a>
                     </div>
                 </div>
                 <div class="col-xl-5">
@@ -66,12 +66,12 @@
                 <div class="col-auto">
                     <div class="col-auto">
                         <div class="button">
-                            <button><span>5</span><span>Комментарии</span></button>
+                            <button onclick="VisibleComment()"><span>5</span><span>Комментарии</span></button>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="row justify-content-center">
+            <div id="comment" class="row justify-content-center">
                 <div class="col-xl-6 col-lg comment">
                     <div class="row">
                         <div class="forms col">
@@ -105,6 +105,69 @@
                                 </label>
                                 <input id="dislike" type="button" value="-" onclick="alert(value)">
                                 <input id="like" type="button" value="+" onclick="alert(value)">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col otvet-button">
+                                <a href="">
+                                    <p>&#10149 3 ответов</p>
+                                </a>
+                            </div>
+                            <div class="row otvet-comment">
+                                <div class="col-11" id="podcomment-1">
+                                    <div class="ava">
+                                        <img src="" alt="">
+                                    </div>
+                                    <p>Имя Фамилия<span>время</span></p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum cupiditate quas quisquam incidunt animi rem. Veniam consequuntur doloremque ex sapiente provident, culpa sit fugiat aut. Voluptatibus deserunt pariatur, maxime magnam!</p>
+                                    <div class="row">
+                                        <div class="col button">
+                                            <button>Ответить</button>
+                                            <label for="dislike"><img src="img/icons/dislike_96637.png" alt=""></label>
+                                            <label for="like">
+                                                <img src="img/icons/like_96682.png" alt="">
+                                            </label>
+                                            <input id="dislike" type="button" value="-" onclick="alert(value)">
+                                            <input id="like" type="button" value="+" onclick="alert(value)">
+                                        </div>
+                                    </div>
+                                </div>                                
+                                <div class="col-11" id="podcomment-2">
+                                    <div class="ava">
+                                        <img src="" alt="">
+                                    </div>
+                                    <p>Имя Фамилия<span>время</span></p>
+                                    <p>Mollitia nesciunt molestiae laboriosam corrupti eius nam accusantium suscipit quibusdam asperiores repellat doloremque, commodi a ad reprehenderit incidunt debitis alias ratione temporibus dolor, qui quia necessitatibus aliquam aperiam, saepe. Assumenda!</p>
+                                    <div class="row">
+                                        <div class="col button">
+                                            <button>Ответить</button>
+                                            <label for="dislike"><img src="img/icons/dislike_96637.png" alt=""></label>
+                                            <label for="like">
+                                                <img src="img/icons/like_96682.png" alt="">
+                                            </label>
+                                            <input id="dislike" type="button" value="-" onclick="alert(value)">
+                                            <input id="like" type="button" value="+" onclick="alert(value)">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-11" id="podcomment-3">
+                                    <div class="ava">
+                                        <img src="" alt="">
+                                    </div>
+                                    <p>Имя Фамилия<span>время</span></p>
+                                    <p>Et necessitatibus obcaecati enim, nihil eius ipsa tempore iure? Nobis ea blanditiis minima ab illum aperiam sint consequuntur, rerum asperiores quae illo, repudiandae dolorum, suscipit a autem maiores dignissimos itaque.</p>
+                                    <div class="row">
+                                        <div class="col button">
+                                            <button>Ответить</button>
+                                            <label for="dislike"><img src="img/icons/dislike_96637.png" alt=""></label>
+                                            <label for="like">
+                                                <img src="img/icons/like_96682.png" alt="">
+                                            </label>
+                                            <input id="dislike" type="button" value="-" onclick="alert(value)">
+                                            <input id="like" type="button" value="+" onclick="alert(value)">
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
