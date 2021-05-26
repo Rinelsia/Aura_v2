@@ -21,6 +21,7 @@ header{
     box-shadow: 0px 10px 7px -14px rgb(175 165 165 / 42%);
     position: sticky;
     top: 0;
+    z-index: 1;
     background-color: rgba(255, 255, 255, 0.8);
 }
 header .back a{
