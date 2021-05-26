@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="js/jQuery.js"></script>
+<!--    <script src="js/script.js"></script>-->
+    <link rel="stylesheet" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container">
+      <div class="row">
+          <form action="" method="post">
+              <input type="text" placeholder="Имя" name="name">
+              <input type="password" name="password" placeholder="Пароль">
+              <input type="submit" >
+          </form>
+      </div>
+  </div>
+   <header>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-2">фото</div>
+                <div class="col ">
+                    <div class="user">
+                        <p>Фамилия Имя Отчество</p>
+                    </div>
+                    <div class="status">Состояние</div>
+                </div>
+                <div class="col-2">
+                    <div class="menu">меню</div>
+                </div>                
+            </div>
+        </div>
+   </header>
+   <main>
+       <div class="container">
+           <div class="row justify-content-center">
+               <div class="col-xl-7 col-lg-12 slider">
+                   <div class="row">
+                       <div id="cont" ondrag="drag(event)" draggable="true" ondragstart="sart(event)" ondragend="end(event)"> 
+                          <h1>Название статьи</h1>
+                          <h3>Автор</h3>
+                          <div class="content">
+                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At quas blanditiis nulla ut a veritatis, voluptates perferendis cum laudantium ab dolores consequuntur exercitationem tempora quis mollitia nobis nam magni. Voluptatibus!</p>
+                          </div>
+                       </div>
+                       <div class="col thema-menu">
+                            <div class="row justify-content-end">
+                                <div class="col-auto">
+                                    <ul>
+                                        <li><input type="button" name="button" value="Комментировать"></li>
+                                        <li><input type="button" name="button" value="Нравится"></li>
+                                        <li><input type="button" value="Не нравится"></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div> 
+                       <div id="comment" class="comment">
+<!--                           <h1>Комментарии</h1>-->
+                           <div id="comment-1">
+                               <div class="osnova">
+                                   <div class="user">
+                                       <div class="row">
+                                           <img src="img/img1.jpg" alt="">
+                                           <h3>Автор</h3>
+                                       </div>
+                                   </div>
+                                   <div class="col-xl-10 offset-xl-2">
+                                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus, fuga sit illum consequuntur placeat eum tempore, voluptas alias reiciendis non autem, iusto hic odit labore doloribus eos eius. Ea, repudiandae!</p>
+                                   </div>
+                               </div>
+                               <div class="col thema-menu">
+                                    <div class="row justify-content-end">
+                                        <div class="col-auto">
+                                            <ul>
+                                                <li><input type="button" name="button" value="Комментировать"></li>
+                                                <li><input type="button" name="button" value="Нравится"></li>
+                                                <li><input type="button" value="Не нравится"></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                               </div> 
+                               <div class="otvety">
+                                   ответы
+                               </div>
+                           </div>
+                       </div>                      
+                   </div>
+               </div>
+<!--
+              <div id="thema-1" class="col-8 slider">
+                   <div ondrag="drag(event)" draggable="true" ondragstart="sart(event)" ondragend="end(event)"> 
+                      <h1>Название статьи</h1>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At quas blanditiis nulla ut a veritatis, voluptates perferendis cum laudantium ab dolores consequuntur exercitationem tempora quis mollitia nobis nam magni. Voluptatibus!</p>
+                   </div>
+                   <div class="thema-menu">
+                       <ul>
+                           <li><input type="button" name="button">X</li>
+                           <li><input type="button"></li>
+                           <li><input type="button"></li>
+                       </ul>
+                   </div>
+               </div>
+               <div id="thema-1" class="col-8 slider">
+                   <div ondrag="drag(event)" draggable="true" ondragstart="sart(event)" ondragend="end(event)"> 
+                      <h1>Название статьи</h1>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At quas blanditiis nulla ut a veritatis, voluptates perferendis cum laudantium ab dolores consequuntur exercitationem tempora quis mollitia nobis nam magni. Voluptatibus!</p>
+                   </div>
+                   <div class="thema-menu">
+                       <ul>
+                           <li><input type="button" name="button">X</li>
+                           <li><input type="button"></li>
+                           <li><input type="button"></li>
+                       </ul>
+                   </div>
+               </div>
+               <div class="col-8 slider">
+                    <div id="card-2">
+                       <p>
+                          Repellat, omnis earum eaque enim cumque quis nobis minima et veritatis autem! Optio, inventore, quaerat! Aspernatur sequi odit molestias animi explicabo nisi beatae, incidunt et ab, voluptate doloribus. Perferendis, repellendus!
+                       </p>
+                   </div>
+               </div>
+-->
+           </div>
+       </div>
+   </main>
+</body>
+<script src="js/script.js"></script>
+</html>
