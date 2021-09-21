@@ -1,0 +1,58 @@
+/*Описание стиля шапки сайта*/
+.container{
+/*    max-width: 975px;*/
+    background-color: #e8f1f0e8;
+}
+/**/
+header p, main .slider>div>p{
+    text-align: center;
+    font-size: 18pt;
+    margin: 0;
+    padding: 5pt 2pt;
+}
+header .user, .status{
+    background-color: #fdfdfdfc;
+    box-shadow: 0 0 1pt rgb(175 165 165 / 88%);
+    padding: 4pt 2pt;
+    margin: 4pt 1pt;
+}
+/*=======================================================*/
+/*main*/
+main .slider .content, .comment{
+    background-color: #fdfdfdfc;
+    margin: 2pt 0pt;
+/*    min-height: 720px;*/
+    box-shadow: 0 0 3pt rgb(175 165 165 / 88%);
+    border-radius: 5px;
+    padding: 1pt 8pt;
+    
+}
+main .slider .content{
+    font-size: 20pt;
+}
+main #card-1{
+    background-image: url(../img/img2.gif);
+}
+main ul li{
+    list-style: none;
+    float: left;
+}
+main #cont h1, #cont h3{
+    text-align: center;
+}
+/* -------- Меню */
+main .thema-menu ul{
+    text-align: right;
+}
+main .thema-menu{
+    margin-bottom: 30px;
+}
+/* ----- Комментарии */
+main .user{
+    padding: 0.4rem 1.5rem;
+}
+main .user img{
+    height: 50px;
+    float: left;
+}
+
