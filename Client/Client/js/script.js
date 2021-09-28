@@ -40,7 +40,8 @@ function end(ev){
 
 //Обработка кнопок
 function EventList(){
-    toListen("button");
+//    toListen("button");
+    
 }
 
 // Функция слушателя на кнопках
