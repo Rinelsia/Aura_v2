@@ -174,14 +174,10 @@ section .comment p span{
     padding: 1rem 1rem;
     font-size: 10pt;
 }
-section .comment .button button{
-    background-color: #ffffff00;
-    color: #928d8d;
-    margin: 0;
-    float: left;
-    padding: 1rem 2rem;
-    margin-right: 16%;
-}
+/**/
+
+
+/**/
 section .comment .button button:hover{
     background-color: #cdf0f72b;
     color: #333;
@@ -215,17 +211,38 @@ section .button label img{
     border: 0;
     font: 400 20pt Arial;
     padding: 0.3rem;
-    margin: 1rem 0.3rem;
+    margin: 0rem 0.2rem;
+}
+section .button label~input{
+    display: none;
 }
 /*натройка кнопок комментариев*/
 /*----------------------------------*/
 main .button{
     font-size: 16pt;
 }
-main .button label{
+section .button label{
     max-height: 50px;
     float: left;
     margin-bottom: 2rem;
+}
+section .comment .button button{
+    background-color: #ffffff00;
+    color: #928d8d;
+    margin: 0;
+    float: left;
+    margin-right: 16%;
+}
+section .button button{
+    cursor: pointer;
+    margin: 2rem;
+    padding: 0.8rem 0.8rem;
+    background-color: #010813ed;
+    border: 0;
+    color: #fff;
+    border: none;
+    font-size: 16pt;
+    cursor: pointer;
 }
 /*
 main .button label img{
@@ -240,8 +257,7 @@ main .button label img{
 }
 */
 main .button label img:hover{
-    height: 45px;
-    margin: 0.7rem 0.12rem;
+    background-color: aqua;
 }
 main .button input{
     background-color: #f2fafbe8;
