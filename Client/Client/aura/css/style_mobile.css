@@ -89,6 +89,7 @@ main p{
     letter-spacing: 1pt;
     word-spacing: 7pt;
     line-height: 24pt;
+    padding: 2px;
 }
 main .container{
     margin: 15px auto 10px auto;
@@ -124,7 +125,8 @@ main .col-12>.nav>.col-auto:nth-child(2){
 }
 
 main .col-12>.row>.col-auto img, 
-main .row>.col-auto>a>img
+main .row>.col-auto>a>img,
+form+button img
 {
     height: 36px;
 }
@@ -144,12 +146,28 @@ section .comment>.row{
 section .comment .ava{
     float: left;
 }
-*/
+*//*==================== --- Формы ---=================================*/
+form input[type="text"]{
+    width: 100%;
+}
+form textarea[name*="p"]{
+    height: 100pt;
+    width: 100%;
+    font-size: inherit;
+    font-family: inherit;
+    word-spacing: inherit;
+    line-height: inherit;
+    resize: none;
+    overflow: hidden;
+}
+form input[name*="h"]{
+    height: 20pt;
+}
 section .comment form input, section .comment form button{
     height: 32pt;
     margin: 0.5rem 0rem;
     border: 0;
-    background-color: #eeefee;;
+    background-color: #eeefee;
 }
 section .comment form input[type="text"]{
     width: 70%;
@@ -164,9 +182,14 @@ section .comment form button{
     cursor: pointer;
 }
 /*убираем фокус с формы*/
-section .comment form:focus, section .comment input:focus, section .comment button:focus{
+section .comment form:focus, section .comment input:focus, section .comment button:focus, form input:focus, form textarea{
     outline: none;
 }
+
+/*===================================================*/
+
+
+/*Коммнтарии*/
 section .comment .ava+p{
     margin-left: 2rem;
 }
@@ -174,10 +197,6 @@ section .comment p span{
     padding: 1rem 1rem;
     font-size: 10pt;
 }
-/**/
-
-
-/**/
 section .comment .button button:hover{
     background-color: #cdf0f72b;
     color: #333;
@@ -204,7 +223,7 @@ section .comment .otvet-comment{
     margin-left: 3%;
     padding-left: 3%;
 }
-section .button label img{
+section .row label img{
     cursor: pointer;
     height: 40px;
     margin: 1rem 0.3rem;
@@ -213,18 +232,30 @@ section .button label img{
     padding: 0.3rem;
     margin: 0rem 0.2rem;
 }
-section .button label~input{
+section .row label~input{
     display: none;
 }
 /*натройка кнопок комментариев*/
 /*----------------------------------*/
+main button{
+    font-size: 12pt;
+    padding: 0.4rem;
+    float: left;
+    margin: auto;
+    background-color: #010813ed;
+    border: none;
+    color: #fff;    
+}
 main .button{
     font-size: 16pt;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
-section .button label{
+section .row label{
     max-height: 50px;
     float: left;
     margin-bottom: 2rem;
+    margin-left: auto;
 }
 section .comment .button button{
     background-color: #ffffff00;
@@ -233,7 +264,8 @@ section .comment .button button{
     float: left;
     margin-right: 16%;
 }
-section .button button{
+section .button button
+{
     cursor: pointer;
     margin: 2rem;
     padding: 0.8rem 0.8rem;
@@ -256,8 +288,8 @@ main .button label img{
     margin: 1rem 0.3rem;
 }
 */
-main .button label img:hover{
-    background-color: aqua;
+main .row label img:hover{
+    background-color: #bbb;
 }
 main .button input{
     background-color: #f2fafbe8;
@@ -268,4 +300,5 @@ main .button input{
     width: 2rem;
     display: none;
 }
+
 /*----------------------------------------*/
