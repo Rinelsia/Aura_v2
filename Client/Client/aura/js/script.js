@@ -6,51 +6,19 @@ document.addEventListener("DOMContentLoaded",EventList, false);
 // В константе каждая разметка разбита на части для добавления пермнных. В данном случае атрибут name. Пока н придумал ничего нового
 const HTML_TEXT = {
         "in_txt" : [
-            ' <p><textarea name="p',
+            ' <p><button type="button">X</button><textarea name="p',
             '" id="" maxlength="1024" placeholder="Содержение не более 1024 символов"></textarea></p>'
         ],
         "in_img" : [
-            '<p><input type="file" name="img',
+            '<p><button type="button">X</button><input type="file" name="img',
             '"></p>'
         ]
     };
 var $_num_click = 0;
 //===========================================================
-function drag(ev){
-    console.log(ev);
-}
-function start(ev){
-    console.log(ev);
-}
-//
-function end(ev){
-    console.log(ev);
-}
 
-//Работа с ассинхронными запросами
-//var ajax = new XMLHttpRequest();
-//ajax.open('GET','http://localhost:1000/file.json', true);
-//ajax.responseType = 'json';
-//ajax.send();
-//
-//ajax.onload = function(){
-//    
-//    let d = ajax.response;
-//    console.log('d'+d);
-//}
-////let xhr = new XMLHttpRequest();
-////
-////xhr.open('GET', 'http://localhost:1000/');
-////
-////xhr.responseType = 'json';
-////
-////xhr.send();
-////
-////// тело ответа {"сообщение": "Привет, мир!"}
-////xhr.onload = function() {
-////  let responseObj = xhr.response;
-////  alert(responseObj.message); // Привет, мир!
-////};
+
+
 
 //Обработка кнопок
 function EventList(){
@@ -59,9 +27,11 @@ function EventList(){
     toListen("button","comment");
     // 1-й входящий, 2-й исходящий
     insertToElement("input","in_txt");
-    insertToElement("input","in_img");    
+    insertToElement("input","in_img");
+    // удаляет дочерние элементы из родителя   
+    deleteElement("input");
 }
-
+//===============================================================
 // Функция слушателя на кнопках
 function toListen(id_out, id_to){
     if(id_out){
@@ -92,6 +62,7 @@ function VisibleContent(e){
 //    // Запуск работы  аякс
 //    new AsinJAX().request();
 }
+
 //=======================================================
 //функция вставки hml элементов в указанное id место
 function insertToElement(id_to, id_in){
@@ -105,20 +76,34 @@ function insertToElement(id_to, id_in){
         return "undefined"
     }
 }
+//
 function insertToHtml(id_to, id_in){
 //    в эту пременную будет присваиваться текст разметки из массива, ключем которого будут запросы клика
     $_num_click++;
     let id_to_elem = document.getElementById(id_to),
         text_html = HTML_TEXT[id_in][0]+'_'+$_num_click+HTML_TEXT[id_in][1];
+    console.log(text_html);
 //    id_to_elem.innerHTML = text_html;
     if($_num_click<=10){
         id_to_elem.insertAdjacentHTML("beforeend",text_html);
+//        document.addEventListener("DOMContentLoaded",function(){deleteElement("close")}, false);
+//        deleteElement(id_to);
     }else{
         id_to_elem.insertAdjacentHTML("beforeend","<p style='color:red'>Вы достигли максимума блоков</p>");
     }
+    
 }
 //=======================================================
-
+//Функция удалния элемента, где elem выступает родительский элемент, и произвидит поиск(делегирование) на котором произошел клик
+function deleteElement(elem){
+    let el = document.getElementById(elem);
+   
+    el.addEventListener("click", function(){
+        let nod = event.target.closest('button');
+        console.log(nod.parentNode);
+        nod.parentNode.remove();
+    },"false");
+}
 
 
 
